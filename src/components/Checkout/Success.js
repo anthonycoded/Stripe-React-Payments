@@ -6,7 +6,6 @@ const stripePromise = loadStripe(
 );
 
 import check from "../../assets/checked.svg";
-import gorilla from "../../assets/gorilla.jpg";
 
 const Success = ({ sessionId }) => {
   return (
