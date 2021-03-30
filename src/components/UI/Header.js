@@ -10,7 +10,7 @@ const Header = () => {
     <div className="pb-12">
       <div className="bg-gray-700 h-14 flex justify-between items-center fixed w-full px-4">
         <Link to="/" className="text-xl font-bold text-yellow-400">
-          Webpack-React-Tailwind
+          Payment Processing
         </Link>
         <a className="md:hidden" onClick={() => setOpen(!open)}>
           <Menu></Menu>
