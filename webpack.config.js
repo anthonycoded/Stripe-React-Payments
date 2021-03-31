@@ -1,6 +1,7 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { HotModuleReplacementPlugin } = require("webpack");
+const Dotenv = require("dotenv-webpack");
 
 module.exports = (env, argv) => {
   return {
@@ -15,6 +16,7 @@ module.exports = (env, argv) => {
         chunkFilename: "[id].css",
       }),
       new HotModuleReplacementPlugin(),
+      new Dotenv(),
     ],
     devServer: {
       open: true,

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   return (
@@ -6,31 +7,18 @@ const LandingPage = () => {
       <p className="font-bold text-5xl text-green-500 mb-8">Hello World</p>
       <div className=" flex flex-col items-center">
         <p className="text-2xl w-full text-justified mb-12">
-          This is a Web Development template. It utilizes these technologies for
-          rapid web development.
+          This is a Web Development template for processing payments using React
+          and Stripe.
         </p>
-        <ul className="flex flex-col items-center bg-gray-300 rounded-2xl p-4">
-          <li className="flex items-center h-24 ">
-            <p className="">
-              <span className="text-2xl text-green-600">Webpack</span> to bundle
-              all of our js, css, and images. It also provides us with a
-              development server.
-            </p>
-          </li>
-          <li className="flex items-center h-24 ">
-            <p>
-              <span className="text-2xl text-green-600">React</span> will allow
-              us quickly and painlessly create reuseable UI components.
-            </p>
-          </li>
-          <li className="flex items-center h-24 ">
-            <p>
-              <span className="text-2xl text-green-600">TailwindCSS</span> for
-              super awesome custom css to make everything look exactly how you
-              want
-            </p>
-          </li>
-        </ul>
+        <div className="flex flex-col w-full h-full items-center bg-gray-300 rounded-2xl p-8 space-y-8">
+          <p className="text-left text-xl font-medium">
+            This is a custom Checkout process. Click below to test the checkout
+            process
+          </p>
+          <Link to="/checkout" className="bg-green-400 p-4 rounded-xl">
+            Checkout
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -54,14 +54,14 @@ const Drawer = ({ setOpen }) => {
         <Link
           to="/login"
           className="text-2xl font-medium"
-          onclick={() => setOpen(false)}
+          onClick={() => setOpen(false)}
         >
           Login
         </Link>
         <Link
           to="/register"
           className="text-2xl font-medium"
-          onclick={() => setOpen(false)}
+          onClick={() => setOpen(false)}
         >
           Register
         </Link>

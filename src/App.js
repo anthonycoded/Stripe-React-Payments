@@ -27,7 +27,7 @@ const App = () => {
           <Route path="/register" component={Register}></Route>
           <Route path="/checkout">
             <Elements stripe={stripePromise}>
-              <Checkout selectedTrack={selectedTrack} />
+              <Checkout />
             </Elements>
           </Route>
         </Switch>

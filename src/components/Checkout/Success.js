@@ -10,7 +10,7 @@ import check from "../../assets/checked.svg";
 const Success = ({ sessionId }) => {
   return (
     <div className="flex flex-col justify-center items-center py-24 px-6">
-      <div className="bg-yellow-400 h-5/6 w-full p-8 rounded-xl lg:h-96 flex flex-col items-center space-y-6">
+      <div className="bg-blue-400 h-5/6 w-full p-8 rounded-xl lg:h-96 flex flex-col items-center space-y-6">
         <img src={gorilla} alt="logo" className="h-32"></img>
         <p className="text-2xl font-bold text-center">
           Thank You for your Payment
